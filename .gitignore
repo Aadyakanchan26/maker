@@ -13,3 +13,6 @@ OPEN-QUESTIONS.md
 FEEDBACK-*.md
 
 _incoming/
+
+# local preview config
+.claude/
