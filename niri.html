@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NIRI &mdash; Aadya Kanchan</title>
+<link rel="stylesheet" href="paper.css?v=20261022i">
+</head>
+<body>
+<div class="content">
+
+<div class="header" id="top">
+<p class="eyebrow"><a href="index.html">Aadya Kanchan / Maker Portfolio</a></p>
+<h1>NIRI</h1>
+</div>
+<div class="tabs">
+<a href="index.html">Home</a>
+<a href="aquaflux.html">AquaFlux</a>
+<a href="niri.html" class="here">NIRI</a>
+<a href="arogya.html">Arogya Dx</a>
+<a href="gis.html">GIS Groundwater</a>
+</div>
+
+<h2>Inspiration</h2>
+
+<div class="side">
+<div class="words">
+<p>It all began in the summer of 2023, when I was 14. I turned on the tap, and not a single drop came out. From my balcony, I watched tanker after tanker arrive; our society&rsquo;s borewells had dried up. There were endless discussions about solutions like rainwater harvesting and percolation pits.</p>
+<p>But nothing changed.</p>
+<p>This isn&rsquo;t just my story. Bengaluru faces a daily shortage of about 500 million liters of water, and globally, around 4 billion people live under high water stress.</p>
+<p>Existing solutions kept stalling for the same three reasons: large infrastructure changes, high cost and complexity, and no one taking ownership. Every solution sat at the society or government level, and nothing reached the individual tap.</p>
+<p>Through my macro and micro surveys, I found something interesting: nearly half of household water loss comes from simple misuse, not scarcity.</p>
+</div>
+<div class="pic">
+<a class="frame photo" href="niri/inspiration-tanker.png"><img src="niri/inspiration-tanker.png" alt="Water tankers lined up in the society, beside an open hand under a tap with nothing coming out, captioned it all started when"></a>
+</div>
+</div>
+
+<h2>Objective</h2>
+
+<p>Everyone should be able to save water every day, right at their tap. By pairing affordable technology with behavioral change, I want to make responsible water use a flexible, everyday habit that scales from homes to schools, hospitals, and public infrastructure.</p>
+
+<h2>System Overview</h2>
+
+<div class="side">
+<div class="words">
+<p>NIRI is a patented, IoT-enabled mechatronic water conservation system that cuts wastage through intelligent flow regulation, real-time leak detection, automatic shut-off, and behavior-driven nudges. It&rsquo;s built as a plug-in extension module that retrofits onto any existing tap or pipeline. Inside, a gear system drives a ball valve, rotating it to precise angles for fine-grained flow control. Refined over 6 iterations in 3 years, the device has 5 modes tuned to the highest-consumption points. It pairs with an AI water assistant that tracks consumption and uses the most effective methods to cut usage while maintaining comfort.</p>
+</div>
+<div class="pic">
+<a class="frame photo" href="niri/gear-valve-rig.png"><img src="niri/gear-valve-rig.png" alt="Keypad wired to a motor, 3D-printed gears and a ball valve clamped on a bench"></a>
+</div>
+</div>
+
+<h2>Journey</h2>
+
+<h3>1. Building the Tech</h3>
+
+<div class="side">
+<div class="words">
+<p>In the ATL lab, every test and piece of feedback reshaped NIRI. I made the power supply self-sufficient with extended battery life for homes without a direct connection, simplified the controls, and rebuilt the blocking mechanism completely, moving from relays and a potentiometer to a servo-driven gear system with a ball valve.</p>
+</div>
+<div class="pic stack">
+<a class="frame" href="niri/soldering.png"><img src="niri/soldering.png" alt="Soldering components over a tangle of coloured wires on a bench"></a>
+<a class="frame" href="niri/bench-test.png"><img src="niri/bench-test.png" alt="Testing the device with tubing running into a plastic tub of water on a desk"></a>
+</div>
+</div>
+
+<h4>Iteration circuits</h4>
+
+<div class="row row-2">
+<div class="cell" style="flex-grow:2.012"><a class="tile" href="niri/block-diagram-trial1.png"><img src="niri/block-diagram-trial1.png" alt="Hand-drawn block diagram linking keypad, Arduino Uno, breadboard, flow meter, valve, motor and 12 V supply"></a></div>
+<div class="cell" style="flex-grow:2.012"><a class="tile" href="niri/block-diagram-trial2.png?v=20261022"><img src="niri/block-diagram-trial2.png?v=20261022" alt="Hand-drawn block diagram for trial 2: keypad, Arduino Uno, LCD display, flow meter, motor, potentiometer, breadboard, alarm and a 9 V and 12 V supply"></a></div>
+</div>
+
+<div class="row row-3">
+<div class="cell" style="flex-grow:1.339"><a class="tile" href="niri/circuit-schematic-a.png"><img src="niri/circuit-schematic-a.png" alt="Circuit schematic: keypad above a breadboard with microcontroller, servo motor and buzzer"></a></div>
+<div class="cell" style="flex-grow:2.985"><a class="tile" href="niri/circuit-schematic-c.png"><img src="niri/circuit-schematic-c.png" alt="Circuit schematic with two display modules added alongside the microcontroller and servo"></a></div>
+</div>
+
+<div class="row row-2">
+<div class="cell" style="flex-grow:1.777"><a class="tile" href="niri/iterations-01-05.png?v=20261022"><img src="niri/iterations-01-05.png?v=20261022" alt="Solution development process: five prototype iterations from proof of concept, through solenoid flow control, a compact circuit with a fourth mode, and the transformed device, to five modes and a ball valve"></a></div>
+</div>
+
+<h3>2. Deploying and Piloting</h3>
+
+<p>The first pilot was at my school canteen at Vidyashilp Academy. I was so worried the gears would buckle under pipe pressure that I checked on it every hour, and my teachers were sure something was wrong with me. From there, NIRI moved into hospitals and homes, where each site gave me different feedback.</p>
+
+<div class="row row-4">
+<div class="cell" style="flex-grow:0.5625"><a class="tile" href="niri/install-canteen.jpg"><img src="niri/install-canteen.jpg" alt="Reaching up to fit the device onto a pipe running along a ceiling"></a></div>
+<div class="cell" style="flex-grow:0.812"><a class="tile" href="niri/install-ceiling.png"><img src="niri/install-ceiling.png" alt="Standing on tiptoe to reach a device mounted high on a ceiling pipe"></a></div>
+<div class="cell" style="flex-grow:0.79"><a class="tile" href="niri/hospital-deployment.jpg?v=20261022"><img src="niri/hospital-deployment.jpg?v=20261022" alt="Device and switchboard mounted on a wall, with the valve on the pipe below"></a></div>
+<div class="cell" style="flex-grow:1.778"><a class="tile" href="niri/govt-school-session.jpg"><img src="niri/govt-school-session.jpg" alt="Showing the device to a classroom of schoolchildren gathered around a desk at the adopted government school"></a></div>
+</div>
+
+<div class="row row-2" style="max-width:620px">
+<div class="cell" style="flex-grow:1.813"><a class="tile" href="niri/app-dashboard.jpg"><img src="niri/app-dashboard.jpg" alt="Water flow dashboard showing domestic and utensil cleaning usage in kilolitres, with normal and regulated mode compared"></a></div>
+</div>
+
+<div class="row row-2">
+<div class="cell" style="flex-grow:1.116"><a class="tile" href="niri/mvp-render.png"><img src="niri/mvp-render.png" alt="Render of a white NIRI unit mounted on a brass ball valve"></a></div>
+<div class="cell" style="flex-grow:1.79"><a class="tile" href="niri/assistant-interface.png"><img src="niri/assistant-interface.png" alt="Screens of the NIRI assistant interface showing consumption charts and controls"></a></div>
+</div>
+
+<div class="row row-2">
+<div class="cell" style="flex-grow:1.777"><a class="tile" href="niri/specs-panel.png?v=20261022"><img src="niri/specs-panel.png?v=20261022" alt="NIRI technical specifications: electronic control, valve unit, power, operation, and monitoring and AI, around a photograph of the unit fitted to a tap"></a></div>
+</div>
+
+<h3>3. Validation</h3>
+
+<div class="side">
+<div class="words">
+<p>Mid-demo before 15 government engineers, I heard the familiar low rumble of a failing motor, and the demonstration stopped. I asked for a second day, came back, and earned their technical validation for the device achieving up to 30% reduction. Now I carry a spare of every component, which I call my &ldquo;motor paranoia.&rdquo;</p>
+<p><a href="niri/validation-certificate.jpg" target="_blank" rel="noopener">You can view the certificate of technical validation &nearr;</a></p>
+</div>
+<div class="pic trio">
+<a class="frame tall" href="niri/govt-demo.png"><img src="niri/govt-demo.png" alt="Demonstrating the device on a trolley to seated officials"></a>
+<div class="pair">
+<a class="frame" href="niri/govt-presenting.png"><img src="niri/govt-presenting.png" alt="Presenting to a seated audience in a government office meeting room"></a>
+<a class="frame" href="niri/govt-audience.png"><img src="niri/govt-audience.png" alt="A room of engineers standing and seated for the presentation"></a>
+</div>
+</div>
+</div>
+
+<h3>4. IP</h3>
+
+<div class="side">
+<div class="words">
+<p>Patent No. 591067, &ldquo;A Device and System for Conservation of Water&rdquo;, granted to Aadya Kanchan by the Patent Office, Government of India, on 3 June 2026 (Application No. 202441093699, filed 29 November 2024).</p>
+<p><a href="niri/patent-grant-certificate.pdf">Link to the patent certificate &nearr;</a></p>
+</div>
+<div class="pic" style="flex-basis:300px">
+<a class="frame" href="niri/patent-grant-certificate.pdf"><img src="niri/patent-grant-certificate.jpg" alt="Patent certificate from the Patent Office, Government of India: Patent No. 591067 granted to Aadya Kanchan for a device and system for conservation of water, date of grant 3 June 2026"></a>
+</div>
+</div>
+
+<h2>Impact</h2>
+
+<h3>Live impact dashboard</h3>
+
+<div class="row row-2">
+<div class="cell" style="flex-grow:1.736"><a class="tile" href="https://www.niriwatersolutions.com/"><img src="niri/live-dashboard.png" alt="NIRI live impact dashboard: 25 devices active, 30% reduction, 18 months active, $755.63 saved on water bills, 1,25,937.53 litres of water saved, enough for 932 people or 466 houses a day, 43.32 kg of CO2 prevented and 75.56 kWh conserved"></a></div>
+</div>
+
+<p><a href="https://www.niriwatersolutions.com/">See the live dashboard on the NIRI site &nearr;</a></p>
+
+<h3>Collaborations and deployments</h3>
+
+<div class="logos">
+<img src="niri/logos/fluxgen.png" alt="Fluxgen Sustainable Technologies">
+<img src="niri/logos/vidyashilp-community-trust.png" alt="Vidyashilp Community Trust">
+<img src="niri/logos/century-builder.png" alt="Century Builder">
+<img src="niri/logos/rossari.png" alt="Rossari Group">
+<img src="niri/logos/zerodha.png" alt="Zerodha">
+<img src="niri/logos/bhive.png" alt="BHIVE Workspace">
+<img src="niri/logos/reva-nest.png" alt="REVA NEST">
+</div>
+
+<h3>Recognition and outreach</h3>
+
+<div class="row row-3">
+<div class="cell" style="flex-grow:1.351"><a class="tile" href="niri/genius-booth.png"><img src="niri/genius-booth.png" alt="Standing with the Indian flag beside the NIRI project board at the GENIUS Olympiad"></a></div>
+<div class="cell" style="flex-grow:1.333"><a class="tile" href="niri/genius-olympiad.jpg"><img src="niri/genius-olympiad.jpg" alt="Standing with the Indian flag in front of a project board at the GENIUS Olympiad"></a></div>
+<div class="cell" style="flex-grow:1.552"><a class="tile" href="niri/sjwp.jpg"><img src="niri/sjwp.jpg" alt="Group photograph at the Stockholm Junior Water Prize India event"></a></div>
+</div>
+<div class="row row-2" style="max-width:959px">
+<div class="cell" style="flex-grow:0.934"><a class="tile" href="niri/awareness-booth.png"><img src="niri/awareness-booth.png" alt="NIRI awareness stall with the device on the counter and a know your water display board"></a></div>
+<div class="cell" style="flex-grow:1.552"><a class="tile" href="niri/drop-talk.png"><img src="niri/drop-talk.png" alt="Speaking at a lectern at Drop Talk, with a slide reading a ripple starts with a drop"></a></div>
+<div class="cell" style="flex-grow:1.87"><a class="tile" href="niri/techvista.png"><img src="niri/techvista.png" alt="Group photograph in front of Techvista banners"></a></div>
+</div>
+
+
+<div class="row row-2">
+<div class="cell">
+<h4>NIRI at the United Nations</h4>
+<iframe class="video" src="https://www.youtube.com/embed/3mRUqa6adkU" title="NIRI at the United Nations: a global call for water action" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+<p class="caption">1M1B Summit, UN Geneva, 2025.</p>
+</div>
+<div class="cell">
+<h4>Rethinking our relationship with water</h4>
+<iframe class="video" src="https://www.youtube.com/embed/1OcR3HDdwIs" title="TEDxGreenfield Women talk: rethinking our relationship with water" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+<p class="caption">TEDxGreenfield Women, 2026.</p>
+</div>
+</div>
+
+<div class="row row-2">
+<div class="cell">
+<h4>Let&rsquo;s Talk Water</h4>
+<iframe class="video" src="https://www.youtube.com/embed/lAxv2rvFhdg" title="Let's Talk Water podcast with Aadya Kanchan" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+<p class="caption">The South First, hosted by Nolan Pinto, 8 June 2025. <a href="https://thesouthfirst.com/karnataka/lets-talk-water-16-year-old-innovator-aadya-kanchan-talks-urgency-action-her-solution/" target="_blank" rel="noopener">Read the article &nearr;</a></p>
+</div>
+<div class="cell">
+<h4>TinkerChamp, Session 22</h4>
+<iframe class="video" src="https://www.youtube.com/embed/9wwuzJZGXzQ" title="TinkerChamp Handhold Me session 22 with Aadya Kanchan" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+<p class="caption">Atal Innovation Mission, NITI Aayog, 4 August 2026.</p>
+</div>
+</div>
+
+<p>NIRI taught me that even the best technology fails if people don&rsquo;t adopt it. Solving big problems doesn&rsquo;t always take grand gestures. Sometimes it takes simple, efficient solutions that create small changes every day.</p>
+
+<h2>Videos &amp; resources</h2>
+
+<div class="row row-2">
+<div class="cell">
+<h4>Regulation mode</h4>
+<iframe class="video" src="https://drive.google.com/file/d/12nXcTHw3NXIH10kt1pEvJc5K3xOifmCN/preview" title="NIRI &mdash; Regulation mode" allow="autoplay; encrypted-media" allowfullscreen loading="lazy"></iframe>
+<p><a href="https://drive.google.com/file/d/12nXcTHw3NXIH10kt1pEvJc5K3xOifmCN/view?usp=sharing">Open video &nearr;</a></p>
+</div>
+<div class="cell">
+<h4>Leak mode</h4>
+<iframe class="video" src="https://drive.google.com/file/d/10tM4W-7tbiTH2-dLqw3DUZJLAqO3DTzz/preview" title="NIRI &mdash; Leak mode" allow="autoplay; encrypted-media" allowfullscreen loading="lazy"></iframe>
+<p><a href="https://drive.google.com/file/d/10tM4W-7tbiTH2-dLqw3DUZJLAqO3DTzz/view?usp=sharing">Open video &nearr;</a></p>
+</div>
+</div>
+
+<div class="row row-2" style="max-width:353px">
+<div class="cell">
+<h4>Installation explanation &middot; 0:47&ndash;2:27</h4>
+<iframe class="video" src="https://drive.google.com/file/d/1hLYgoSemC35hELKsL-rCfxYbWH9mLlV1/preview" title="NIRI &mdash; Installation explanation" allow="autoplay; encrypted-media" allowfullscreen loading="lazy"></iframe>
+<p><a href="https://drive.google.com/file/d/1hLYgoSemC35hELKsL-rCfxYbWH9mLlV1/view?usp=sharing">Open video &nearr;</a></p>
+</div>
+</div>
+
+<h3>Research paper</h3>
+<p>&ldquo;Chrono Aqua OSR (NIRI): A Real-Time Mechatronic System for Smart Urban Water Conservation with Customized Control&rdquo;<br>
+International Journal of High School Research, 2026, Vol. 8 Issue 12, p. 70&ndash;80.</p>
+<p><a href="https://doi.org/10.36838/IJHSR812.70" target="_blank" rel="noopener">You can read the full paper here &nearr;</a></p>
+<p><a href="index.html">&larr; Back to all projects</a></p>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+/* A plain student page. Default serif, black text, paper background. */
+
+html { background: #f7f6f0; }
+
+body {
+  margin: 0;
+  padding: 20px 5vw 80px;
+  background: #f7f6f0;
+  color: #000;
+  font-family: serif;
+  font-size: 17.5px;
+  line-height: normal;
+}
+
+.content { max-width: 980px; margin: 0 auto; }
+
+.header { margin-bottom: 0.6em; }
+.eyebrow { margin: 0 0 0.15em; font-size: 0.78em; letter-spacing: 0.1em; text-transform: uppercase; color: #666; }
+.eyebrow a { color: #666; }
+.header h1 { flex: 1; margin: 0; font-size: 2em; }
+
+a, a:visited { color: #000; }
+a:hover { text-decoration: none; }
+
+/* Tabs across the top, so every project is one click away. */
+.tabs { margin: 0 0 1.8em; padding: 6px 0 10px; border-bottom: 1px solid #ddd9cc; }
+.tabs a { margin-right: 18px; white-space: nowrap; }
+.tabs a.here { text-decoration: none; font-weight: bold; }
+
+h2 { margin: 1.5em 0 0.5em; padding-top: 1.1em; border-top: 1px solid #ddd9cc; font-size: 1.3em; }
+.tabs + h2, .intro + h2 { border-top: 0; padding-top: 0; }
+h3 { margin: 1.4em 0 0.4em; font-size: 1.12em; }
+h4 { margin: 1.3em 0 0.4em; font-size: 1.05em; font-style: normal; font-weight: bold; letter-spacing: 0.01em; }
+p { margin: 0 0 1em; }
+ul { margin: 0 0 1em; padding-left: 1.4em; }
+li { margin-bottom: 0.3em; }
+
+/* Each government engagement shows its own photograph beside it. */
+.gov { max-width: 800px; margin: 0 0 1.2em; }
+.govrow { display: flex; gap: 18px; align-items: flex-start; margin: 0 0 16px; }
+.govpic { flex: 0 0 180px; display: block; }
+.govpic img { display: block; width: 100%; height: 150px; object-fit: cover; }
+.govtext { flex: 1 1 0; min-width: 0; }
+
+/* Two pictures side by side inside a picture column, sized so they sit level. */
+.pairx { display: flex; gap: 12px; align-items: flex-start; }
+.pairx .s { flex: 1 1 0; min-width: 0; display: block; }
+.pairx .frame { width: 100%; }
+
+/* One upright picture beside two wide ones stacked, both columns ending level. */
+.side .pic.trio { display: flex; flex-direction: row; gap: 12px; align-items: flex-start; }
+.pic.trio .tall { flex: 0 0 227px; }
+.pic.trio .pair { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: 12px; }
+
+/* Collaborators shown as logos, the way the NIRI site does it. */
+.logos { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 26px 34px; margin: 0 0 1.4em; }
+.logos img { display: block; height: 46px; width: auto; max-width: 150px; object-fit: contain; }
+/* press logos sit smaller and in more rows than the collaborator strip */
+.logos.press { justify-content: flex-start; gap: 20px 28px; }
+.logos.press img { height: 34px; max-width: 130px; object-fit: contain; object-position: left center; }
+
+/* The three panels from the mathematical-analysis slide, rebuilt as text. */
+.boxes { display: flex; gap: 22px; align-items: stretch; margin: 0 0 1.2em; }
+.box { flex: 1 1 0; min-width: 0; background: #fff; border: 1px solid #ddd9cc; padding: 14px 18px 16px; }
+.box h5 { margin: 0 0 0.5em; font-size: 0.95em; text-align: center; }
+.box ul { margin: 0; padding-left: 1.2em; }
+.box li { margin-bottom: 0.35em; }
+.box p { margin: 0 0 0.5em; }
+.box p:last-child { margin-bottom: 0; }
+.eq { font-style: italic; }
+.rad { border-top: 1px solid #000; padding: 0 2px; }
+.features { margin: 0 0 1em; padding-left: 1.4em; }
+.features li { margin-bottom: 0.5em; }
+
+/* Pictures sit in rows of equal boxes, two to a row, or three to close an
+   odd group, so no picture is ever left alone and every row lines up.
+   Each picture shows whole inside its box. */
+.row { display: flex; flex-wrap: wrap; gap: 14px; margin: 0 0 14px; align-items: flex-start; }
+.row .cell { flex: 1 1 0; min-width: 0; }
+.row .cell .tile { width: 100%; }
+.row .tile { flex: 1 1 0; min-width: 0; display: block; }
+.row-1 .tile { flex: 0 1 50%; margin: 0 auto; }
+.tile img, .tile video { display: block; width: 100%; height: auto; }
+/* a clip sizes from its own frame, never from a poster of another shape */
+.tile video { background: #000; }
+/* Every picture in a row is given a share of the width in proportion to its own
+   shape, so the whole row comes out one height with nothing cropped away. */
+/* A row of mixed-shape photographs that should read as one set: equal cells,
+   each picture filling its cell. */
+.row.square { max-width: none; }
+.row.square .cell { flex: 1 1 0; min-width: 0; }
+.row.square .tile img { width: 100%; height: 300px; object-fit: cover; }
+
+/* Lab records: three to a row, every note in an identical white cell, so they all
+   read at one size. Nothing is cropped - a note just sits inside its cell. */
+.row.notes { max-width: 800px; }
+.row.notes .cell { flex: 1 1 0; min-width: 0; height: 340px; background: #fff; border: 1px solid #ddd9cc; }
+.row.notes .tile { display: block; width: 100%; height: 100%; }
+.row.notes img { width: 100%; height: 100%; object-fit: contain; }
+
+/* Wide scans, such as map sheets and lab-record spreads, get the full width. */
+.row-full { margin: 0 0 14px; }
+.row-full > a { margin: 0 auto; }
+
+/* A picture is just the picture: no box, no border, no white margin around it,
+   so it reads as pasted onto the page rather than screenshotted. */
+.frame { display: block; width: 300px; }
+.caption { max-width: 340px; }
+
+img.scanbig { display: block; width: 100%; height: auto; margin: 0; }
+
+
+/* Home page: the picture sits beside its text and stretches to exactly the
+   height of that text, so the two columns always finish on the same line. */
+.side { display: flex; align-items: flex-start; gap: 30px; margin: 0 0 1.8em; }
+.side .words { flex: 1 1 auto; min-width: 0; }
+.side .words p:last-child { margin-bottom: 0; }
+.side .pic { flex: 0 0 420px; display: flex; flex-direction: column; }
+/* flex-basis 0 so the picture takes the height the text gives it,
+   rather than the row growing to the picture's own height. */
+.side .frame { width: 100%; height: auto; flex: 0 0 auto; }
+.side .pic { overflow: hidden; }
+.side .caption { width: 100%; max-width: none; margin-top: 6px; }
+/* Several pictures beside one block of text: a 2x2 grid in a wider column,
+   so the pictures finish close to where the text does. */
+.side .pic.stack { flex-basis: 420px; overflow: visible; display: grid; grid-template-columns: 1fr 1fr; gap: 12px 14px; align-content: start; }
+.side .pic.stack .frame { flex: none; }
+.frame img, .frame video { display: block; width: 100%; height: auto; }
+/* a tall picture keeps the column width but not the column height */
+.side .frame img, .side .frame video { width: 100%; height: auto; max-height: 480px; object-fit: contain; margin: 0 auto; }
+
+.caption { margin: 6px 0 0; font-size: 0.82em; font-style: italic; }
+/* a caption belonging to a whole row sits under it, full width */
+.rowcap { flex: 0 0 100%; max-width: none; margin-top: 2px; }
+
+/* Home page: one card per project &mdash; picture on the left, text on the right,
+   separated by a rule. */
+.card { border-top: 1px solid #ddd9cc; padding: 1.6em 0 0.6em; }
+/* the tab bar already draws a rule, so the first card does not repeat it */
+.tabs + .card { border-top: 0; padding-top: 0.6em; }
+.card-row { display: flex; align-items: flex-start; gap: 30px; }
+.card-pic { flex: 0 0 360px; display: block; height: 230px; overflow: hidden; }
+/* all four fill the same box, so the pictures themselves match, not just their frames */
+.card-pic img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.card-text { flex: 1 1 auto; min-width: 0; }
+.card-text p:last-child { margin-bottom: 0; }
+.label { margin: 0 0 0.3em; font-size: 0.78em; letter-spacing: 0.1em; text-transform: uppercase; color: #666; }
+.card h2 { margin: 0 0 0.5em; font-size: 1.18em; }
+
+/* Videos: YouTube Shorts are portrait, so they get a narrow upright frame. */
+.video { display: block; width: 100%; max-width: 560px; aspect-ratio: 16 / 9; border: 0; background: #000; margin: 0 0 0.6em; }
+.paper { display: block; width: 100%; max-width: 700px; height: 460px; border: 1px solid #ddd9cc; background: #fff; margin: 0 0 0.6em; }
+/* the clip is portrait, but a landscape frame uses the row width instead of
+   leaving a tall gap beside the text */
+.short { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; background: #000; margin: 0 0 0.8em; }
+
+@media (max-width: 760px) {
+  body { padding: 16px 22px 48px; }
+  .header { display: block; }
+  .header h1 { font-size: 1.6em; margin-bottom: 0.2em; }
+  .tabs a { display: inline-block; margin: 0 14px 6px 0; }
+  .row { flex-direction: column; }
+  .row .tile, .row-1 .tile { flex: none; }
+  .side { display: block; }
+  .side .pic { margin-top: 10px; }
+  .side .pic.stack { grid-template-columns: 1fr; }
+  .side .pic.trio { display: block; }
+  .pic.trio .tall { margin-bottom: 12px; }
+  /* A phone is narrower than the fixed frame, so let it shrink to fit. */
+  .frame, .caption { width: 100%; max-width: 100%; }
+  .frame, .side .frame { flex: none; }
+  .govrow { display: block; }
+  .govpic { width: 100%; margin-bottom: 8px; }
+  .govpic img { height: auto; }
+  .boxes { display: block; }
+  .box { margin-bottom: 14px; }
+  .card-row { display: block; }
+  .card-pic { width: 100%; height: auto; margin-bottom: 0.8em; }
+}
